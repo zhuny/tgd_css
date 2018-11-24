@@ -1,7 +1,17 @@
 header {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   background: #edce42;
   padding-bottom: 0;
+}
+
+header .container .row .col-xs-4 {
+  background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/logo_new.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+header .container .row .col-xs-4 img {
+  visibility: hidden;
 }
 
 header #header-bar {
@@ -36,6 +46,10 @@ header #right-search-form>#right-search-btn {
   color: #d2af14;
 }
 
+#main .menu-wrapper .spacer {
+  background-color: #f6e7a2
+}
+
 #main .menu-wrapper > .header {
   background-color: #edce42;
   color: #000000;
@@ -43,6 +57,12 @@ header #right-search-form>#right-search-btn {
 
 #main .menu-wrapper > .header > a {
   color: #000000;
+}
+
+#main .menu-wrapper {
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 2px 2px 2px #dddddd;
 }
 
 #main .menu-wrapper>a>em {
@@ -55,6 +75,10 @@ header #right-search-form>#right-search-btn {
 
 .badge {
   display: none;
+}
+
+.badge.badge-live {
+  display: inline-block;
 }
 
 #article-list #article-list-category {
@@ -80,6 +104,36 @@ header #right-search-form>#right-search-btn {
   background-color: #75610b;
 }
 
+#article-list {
+  padding: 0;
+  margin-top: 0;
+}
+
+#main #main-content>div.frame {
+  border-right: none;
+}
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#board-info {
+  background-color: #f0d55c;
+  margin-bottom: 0;
+}
+
+#board-info #board-info-profile-img {
+  position: relative;
+  bottom: 6px;
+  left: 6px;
+}
+
+#article-list #article-list-menu {
+  width: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .pagination>.active>a, 
 .pagination>.active>a:focus, 
 .pagination>.active>a:hover, 
@@ -102,11 +156,93 @@ header #right-search-form>#right-search-btn {
   animation-iteration-count: infinite;
 }
 
+#article-list>.article-list-row>.item>.list-title>small.favo {
+  display: inline-block;
+  perspective: 100px;
+  animation-name: swing_heart;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#article-content-wrapper {
+  padding: 0;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header, 
+#article-reply-area #reply-best-area .reply>.reply-header {
+  background-color: #f6e7a2;
+}
+
+#article-reply-area #reply-real-area, 
+#article-reply-area #reply-best-area {
+  padding: 0;
+}
+
+#article-reply-area #reply-real-area .reply, 
+#article-reply-area #reply-best-area .reply {
+  border: none;
+}
+
+#article-content-wrapper>.header {
+  border-top-color: #a3880f;
+  background-color: #f6e7a2;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #75610b;
+}
+
+#article-list>.article-list-row>.item>.list-header {
+  border-left: none;
+}
+
+#article-list #article-list-category>a {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category {
+  padding-right: 0;
+  border-right: none;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category>span {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+  font-size: inherit;
+  width: 12px;
+  text-overflow: clip;
+}
+
+@font-face {
+  font-family: 'starcraft';
+  src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
+}
+
+@font-face {
+  font-family: 'FontAwesome5';
+  src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);
+}
+
 @keyframes rotate_star {
   from {
     transform: rotateY(0deg);
   }
   to {
     transform: rotateY(180deg);
+  }
+}
+
+@keyframes swing_heart {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(+10deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
