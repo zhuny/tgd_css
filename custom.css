@@ -2,83 +2,94 @@ header {
   margin-bottom: 24px;
   background: #edce42;
   padding-bottom: 0;
+  border-bottom-color: #a3880f;
 }
 
-header .container .row .col-xs-4 {
+header>#header-area>a>h1 {
   background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/logo_new.png);
   background-repeat: no-repeat;
-  background-position: 15px center;
+  background-size: 100%;
 }
 
-header .container .row .col-xs-4 img {
-  visibility: hidden;
-}
-
-header #header-bar {
-  margin-bottom: 0;
-}
-
-header #header-bar > .row {
-  background-color: #edce42;
-  border-top: 2px solid #a3880f;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-}
-
-header #header-bar #header-menu-left {
-  border-right: none;
-}
-
-header #header-bar #header-menu-right {
-  border-left: none;
-}
-
-header #header-bar #header-top-notice strong.notice-badge {
+header>#header-area>#header-search-link {
   background-color: #d2af14;
 }
 
-header #right-search-form>input[type=text] {
-  border-color: #d2af14;
+.frame {
+  background-color: #edce42;
 }
 
-header #right-search-form>#right-search-btn {
-  color: #d2af14;
+#goClipBtn {
+  margin-right: 42px;
 }
 
-#main .menu-wrapper .spacer {
-  background-color: #f6e7a2
+#board-info {
+  background-color: #f0d55c;
+  margin-bottom: 0;
 }
 
-#main .menu-wrapper > .header {
+#board-info>h1 {
+  width: 100%;
+}
+
+#header-top-notice {
+  background-color: #edce42;
+}
+
+#header-top-notice strong.notice-badge {
+  background-color: #d2af14;
+}
+
+nav#nav>.nav-header {
   background-color: #edce42;
   color: #000000;
 }
 
-#main .menu-wrapper > .header > a {
+nav#nav>.nav-header a {
   color: #000000;
 }
 
-#main .menu-wrapper {
-  border-right: none;
-  border-bottom: none;
-  box-shadow: 2px 2px 2px #dddddd;
+header > #header-search-bar #header-search-input {
+  border-color: #d2af14;
 }
 
-#main .menu-wrapper>a>em {
-  color: #75610b;
+header > #header-search-bar #header-search-btn {
+  color: #d2af14;
 }
 
-#main .menu-wrapper>a>i.fa.fa-square {
-  color: #75610b;
+#board-info #viewers-area {
+  background-color: #d2af14;
+  padding: 1px 8px;
+  border-radius: 12px;
+  color: #2f2704;
 }
 
-.badge {
-  display: none;
+
+#board-info #board-info-bottom #addFavoriteBtn i {
+  color: #bb9c11;
 }
 
-.badge.badge-live {
-  display: inline-block;
+#board-info #viewers-area #viewers {
+  font-weight: 700;
+}
+
+#article-content-wrapper>.header {
+  background-color: #f6e7a2;
+}
+
+#article-content-wrapper>.footer {
+  background-color: #f6e7a2;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header, 
+#article-reply-area #reply-best-area .reply>.reply-header {
+  background-color: #f6e7a2;
+  border-radius: 8px 8px 0 0;
+}
+
+#article-reply-area #reply-real-area .reply, 
+#article-reply-area #reply-best-area .reply {
+  border-radius: 8px;
 }
 
 #article-list #article-list-category {
@@ -88,50 +99,27 @@ header #right-search-form>#right-search-btn {
 
 #article-list #article-list-category>a {
   background-color: #f6e7a2;
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
 }
 
-#board-info #viewers-area {
-  background-color: #e9c316;
-  padding: 1px 8px;
-  border-radius: 12px;
+#article-list>.article-list-row.hot {
+  background-color: #f4e18a;
 }
 
-#article-list>.article-list-row.notice {
-  background-color: #fbf3d0;
+#article-list>.article-list-row.hot>.item>.list-title>small.favo {
+  color: red;
 }
 
 #article-list>.article-list-row>.item>.list-header>span {
   background-color: #75610b;
 }
 
-#article-list {
-  padding: 0;
-  margin-top: 0;
+#article-list>.article-list-row>.item>a.list-title>.title-value {
+  max-width: 180px;
 }
 
-#main #main-content>div.frame {
-  border-right: none;
-}
-
-#article-list>.article-list-row {
-  border-right: none;
-}
-
-#board-info {
-  background-color: #f0d55c;
-  margin-bottom: 0;
-}
-
-#board-info #board-info-profile-img {
-  position: relative;
-  bottom: 6px;
-  left: 6px;
-}
-
-#article-list #article-list-menu {
-  width: auto;
-  margin-left: 1em;
-  margin-right: 1em;
+#article-list>.article-list-row>.item>a.list-title:visited {
+  color: #666666!important;
 }
 
 .pagination>.active>a, 
@@ -163,64 +151,6 @@ header #right-search-form>#right-search-btn {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-}
-
-#article-content-wrapper {
-  padding: 0;
-}
-
-#article-reply-area #reply-real-area .reply > .reply-header, 
-#article-reply-area #reply-best-area .reply>.reply-header {
-  background-color: #f6e7a2;
-}
-
-#article-reply-area #reply-real-area, 
-#article-reply-area #reply-best-area {
-  padding: 0;
-}
-
-#article-reply-area #reply-real-area .reply, 
-#article-reply-area #reply-best-area .reply {
-  border: none;
-}
-
-#article-content-wrapper>.header {
-  border-top-color: #a3880f;
-  background-color: #f6e7a2;
-}
-
-#article-list>.article-list-row>.item>.list-title>small.comment-count {
-  color: #75610b;
-}
-
-#article-list>.article-list-row>.item>.list-header {
-  border-left: none;
-}
-
-#article-list #article-list-category>a {
-  font-family: "FontAwesome", "starcraft", "FontAwesome5";
-}
-
-#article-list>.article-list-row>.item>.list-title>.list-category {
-  padding-right: 0;
-  border-right: none;
-}
-
-#article-list>.article-list-row>.item>.list-title>.list-category>span {
-  font-family: "FontAwesome", "starcraft", "FontAwesome5";
-  font-size: inherit;
-  width: 12px;
-  text-overflow: clip;
-}
-
-@font-face {
-  font-family: 'starcraft';
-  src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
-}
-
-@font-face {
-  font-family: 'FontAwesome5';
-  src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);
 }
 
 @keyframes rotate_star {

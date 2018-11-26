@@ -14,6 +14,7 @@ header>#header-area>a>h1 {
 
 header>#header-area>#header-search-link {
   background-color: {{ 45 }};
+  color: {{ 30 }};
 }
 
 .frame {
@@ -39,6 +40,14 @@ header>#header-area>#header-search-link {
 
 #header-top-notice strong.notice-badge {
   background-color: {{ 45 }};
+}
+
+.badge {
+  display: none;
+}
+
+.badge.badge-live {
+  display: inline-block;
 }
 
 nav#nav>.nav-header {
@@ -82,10 +91,19 @@ header > #header-search-bar #header-search-btn {
   background-color: {{ 80 }};
 }
 
+#article-reply-area > .header h5 {
+  color: {{ 25 }};
+}
+
 #article-reply-area #reply-real-area .reply > .reply-header, 
 #article-reply-area #reply-best-area .reply>.reply-header {
   background-color: {{ 80 }};
   border-radius: 8px 8px 0 0;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, 
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: {{ 25 }};
 }
 
 #article-reply-area #reply-real-area .reply, 
@@ -113,6 +131,10 @@ header > #header-search-bar #header-search-btn {
 
 #article-list>.article-list-row>.item>.list-header>span {
   background-color: #75610b;
+}
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+  color: {{ 25 }};
 }
 
 #article-list>.article-list-row>.item>a.list-title>.title-value {

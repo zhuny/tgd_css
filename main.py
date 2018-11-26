@@ -33,7 +33,7 @@ COLOR = {
 
 pattern = re.compile(r"\{\{(.*?)\}\}")
 
-with open(sys.argv[1]) as f:
+with open(sys.argv[1], encoding='utf8') as f:
   content = f.read()
 
 def replace(g):
@@ -42,7 +42,7 @@ def replace(g):
 
 content = pattern.sub(replace, content)
 
-with open(sys.argv[2], 'w') as f:
+with open(sys.argv[2], 'w', encoding='utf8') as f:
   print(content.strip(), file=f)
 
 

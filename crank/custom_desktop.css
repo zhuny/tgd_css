@@ -1,0 +1,297 @@
+html, body {
+  background-color: #fbf3d0;
+}
+
+header {
+  margin-bottom: 24px;
+  background: #edce42;
+  padding-bottom: 0;
+}
+
+header .container .row .col-xs-4 {
+  background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/logo_new.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+header .container .row .col-xs-4 img {
+  visibility: hidden;
+}
+
+header #header-bar {
+  margin-bottom: 0;
+}
+
+header #header-bar > .row {
+  background-color: #edce42;
+  border-top: 2px solid #a3880f;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+header #header-bar #header-menu-left {
+  border-right: none;
+}
+
+header #header-bar #header-menu-right {
+  border-left: none;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+  background-color: #d2af14;
+}
+
+header #right-search-form>input[type=text] {
+  border-color: #d2af14;
+}
+
+header #right-search-form>#right-search-btn {
+  color: #d2af14;
+}
+
+#main .menu-wrapper .spacer {
+  background-color: #f6e7a2
+}
+
+#main .menu-wrapper > .header {
+  background-color: #edce42;
+  color: #000000;
+  border-radius: 8px 8px 0 0;
+}
+
+#main .menu-wrapper > .header > a {
+  color: #000000;
+}
+
+#main .menu-wrapper {
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 2px 2px 2px #dddddd;
+  border-top-right-radius: 8px;
+}
+
+#main .menu-wrapper>a>em {
+  color: #75610b;
+}
+
+#main .menu-wrapper>a>i.fa.fa-square {
+  color: #75610b;
+}
+
+.badge {
+  display: none;
+}
+
+.badge.badge-live {
+  display: inline-block;
+}
+
+#article-list #article-list-category {
+  border-top: none;
+  background-color: #f6e7a2;
+}
+
+#article-list #article-list-category>a {
+  background-color: #f6e7a2;
+}
+
+#board-info #viewers-area {
+  background-color: #d2af14;
+  padding: 1px 8px;
+  border-radius: 12px;
+  color: #2f2704;
+}
+
+#article-list>.article-list-row.notice {
+  background-color: #fbf3d0;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+  background-color: #75610b;
+}
+
+#article-list {
+  padding: 0;
+  margin-top: 0;
+}
+
+#main #main-content>div.frame {
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#board-info {
+  background-color: #f0d55c;
+  margin-bottom: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#board-info #board-info-profile-img {
+  position: relative;
+  bottom: 6px;
+  left: 6px;
+}
+
+#article-list #article-list-menu {
+  width: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+  background-color: #edce42;
+  border-color: #edce42;
+}
+
+.pagination>li>a {
+  color: #a3880f;
+}
+
+.list-title .fa-star:before {
+  display: inline-block;
+  perspective: 100px;
+  animation-name: rotate_star;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* hello */
+#article-list>.article-list-row>.item>.list-title>small.favo {
+  display: inline-block;
+  perspective: 100px;
+  animation-name: swing_heart;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#article-list>.article-list-row.hot>.item>.list-title>small.favo {
+  color: red;
+}
+
+#article-content-wrapper {
+  padding: 0;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header, 
+#article-reply-area #reply-best-area .reply>.reply-header {
+  background-color: #f6e7a2;
+}
+
+#article-reply-area #reply-real-area, 
+#article-reply-area #reply-best-area {
+  padding: 0;
+}
+
+#article-reply-area #reply-real-area .reply, 
+#article-reply-area #reply-best-area .reply {
+  border: none;
+}
+
+#article-content-wrapper>.header {
+  border-top-color: #a3880f;
+  background-color: #f6e7a2;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #75610b;
+}
+
+#article-list>.article-list-row>.item>.list-header {
+  border-left: none;
+}
+
+#article-list #article-list-category>a {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category {
+  padding-right: 0;
+  border-right: none;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category>span {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+  font-size: inherit;
+  width: 12px;
+  text-overflow: clip;
+}
+
+#article-content-wrapper>.footer {
+  background-color: #f6e7a2;
+}
+
+#article-list>.article-list-row.hot {
+  background-color: #edce42;
+}
+
+#article-list>.article-list-row>.item>.list-title>a,
+#article-list>.article-list-row>.item>.list-title>a:visited {
+  color: #000000;
+}
+
+#board-info #board-info-bottom #addFavoriteBtn i {
+  color: #bb9c11;
+}
+
+#board-info #viewers-area i {
+  display: none;
+}
+
+#board-info #viewers-area::before {
+  content: "귀한 곳에 누추한 ";
+}
+
+#board-info #viewers-area #viewers {
+  font-weight: 700;
+}
+
+#board-info #viewers-area::after {
+  content: "명 환영합니다.";
+}
+
+@font-face {
+  font-family: 'starcraft';
+  src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
+}
+
+@font-face {
+  font-family: 'FontAwesome5';
+  src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);
+}
+
+@keyframes rotate_star {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes swing_heart {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(+10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

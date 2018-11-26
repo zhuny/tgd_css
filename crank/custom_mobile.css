@@ -1,9 +1,8 @@
-
 header {
   margin-bottom: 24px;
-  background: {{ 59 }};
+  background: #edce42;
   padding-bottom: 0;
-  border-bottom-color: {{ 35 }};
+  border-bottom-color: #a3880f;
 }
 
 header>#header-area>a>h1 {
@@ -13,11 +12,12 @@ header>#header-area>a>h1 {
 }
 
 header>#header-area>#header-search-link {
-  background-color: {{ 45 }};
+  background-color: #d2af14;
+  color: #8c750d;
 }
 
 .frame {
-  background-color: {{ 59 }};
+  background-color: #edce42;
 }
 
 #goClipBtn {
@@ -25,7 +25,7 @@ header>#header-area>#header-search-link {
 }
 
 #board-info {
-  background-color: {{ 65 }};
+  background-color: #f0d55c;
   margin-bottom: 0;
 }
 
@@ -34,40 +34,48 @@ header>#header-area>#header-search-link {
 }
 
 #header-top-notice {
-  background-color: {{ 59 }};
+  background-color: #edce42;
 }
 
 #header-top-notice strong.notice-badge {
-  background-color: {{ 45 }};
+  background-color: #d2af14;
+}
+
+.badge {
+  display: none;
+}
+
+.badge.badge-live {
+  display: inline-block;
 }
 
 nav#nav>.nav-header {
-  background-color: {{ 59 }};
-  color: {{ 0 }};
+  background-color: #edce42;
+  color: #000000;
 }
 
 nav#nav>.nav-header a {
-  color: {{ 0 }};
+  color: #000000;
 }
 
 header > #header-search-bar #header-search-input {
-  border-color: {{ 45 }};
+  border-color: #d2af14;
 }
 
 header > #header-search-bar #header-search-btn {
-  color: {{ 45 }};
+  color: #d2af14;
 }
 
 #board-info #viewers-area {
-  background-color: {{ 45 }};
+  background-color: #d2af14;
   padding: 1px 8px;
   border-radius: 12px;
-  color: {{ 10 }};
+  color: #2f2704;
 }
 
 
 #board-info #board-info-bottom #addFavoriteBtn i {
-  color: {{ 40 }};
+  color: #bb9c11;
 }
 
 #board-info #viewers-area #viewers {
@@ -75,17 +83,26 @@ header > #header-search-bar #header-search-btn {
 }
 
 #article-content-wrapper>.header {
-  background-color: {{ 80 }};
+  background-color: #f6e7a2;
 }
 
 #article-content-wrapper>.footer {
-  background-color: {{ 80 }};
+  background-color: #f6e7a2;
+}
+
+#article-reply-area > .header h5 {
+  color: #75610b;
 }
 
 #article-reply-area #reply-real-area .reply > .reply-header, 
 #article-reply-area #reply-best-area .reply>.reply-header {
-  background-color: {{ 80 }};
+  background-color: #f6e7a2;
   border-radius: 8px 8px 0 0;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, 
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: #75610b;
 }
 
 #article-reply-area #reply-real-area .reply, 
@@ -95,16 +112,16 @@ header > #header-search-bar #header-search-btn {
 
 #article-list #article-list-category {
   border-top: none;
-  background-color: {{ 80 }};
+  background-color: #f6e7a2;
 }
 
 #article-list #article-list-category>a {
-  background-color: {{ 80 }};
+  background-color: #f6e7a2;
   font-family: "FontAwesome", "starcraft", "FontAwesome5";
 }
 
 #article-list>.article-list-row.hot {
-  background-color: {{ 75 }};
+  background-color: #f4e18a;
 }
 
 #article-list>.article-list-row.hot>.item>.list-title>small.favo {
@@ -113,6 +130,10 @@ header > #header-search-bar #header-search-btn {
 
 #article-list>.article-list-row>.item>.list-header>span {
   background-color: #75610b;
+}
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+  color: #75610b;
 }
 
 #article-list>.article-list-row>.item>a.list-title>.title-value {
@@ -129,8 +150,8 @@ header > #header-search-bar #header-search-btn {
 .pagination>.active>span, 
 .pagination>.active>span:focus, 
 .pagination>.active>span:hover {
-  background-color: {{ 59 }};
-  border-color: {{ 59 }};
+  background-color: #edce42;
+  border-color: #edce42;
 }
 
 .pagination>li>a {
@@ -177,4 +198,3 @@ header > #header-search-bar #header-search-btn {
     transform: rotate(0);
   }
 }
-
