@@ -3,6 +3,10 @@ html, body {
   background-color: {{ 90 }};
 }
 
+audio, canvas, progress, video {
+  max-width: 100%;
+}
+
 header {
   margin-bottom: 24px;
   background: {{ 59 }};
@@ -231,7 +235,7 @@ header #right-search-form>#right-search-btn {
 }
 
 #article-list>.article-list-row.hot {
-  background-color: {{ 59 }};
+  background-color: {{ 80 }};
 }
 
 #article-list>.article-list-row>.item>.list-title>a,
@@ -257,6 +261,10 @@ header #right-search-form>#right-search-btn {
 
 #board-info #viewers-area::after {
   content: "명 환영합니다.";
+}
+
+#article-info>h2>span.category {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
 }
 
 @font-face {

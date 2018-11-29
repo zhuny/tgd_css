@@ -1,4 +1,8 @@
 
+audio, canvas, progress, video {
+  max-width: 100%;
+}
+
 header {
   margin-bottom: 24px;
   background: {{ 59 }};
@@ -176,6 +180,22 @@ header > #header-search-bar #header-search-btn {
   animation-timing-function: ease-in-out;
 }
 
+#board-info #viewers-area i {
+  display: none;
+}
+
+#board-info #viewers-area::before {
+  content: "귀한 곳에 누추한 ";
+}
+
+#board-info #viewers-area #viewers {
+  font-weight: 700;
+}
+
+#board-info #viewers-area::after {
+  content: "명";
+}
+
 @keyframes rotate_star {
   from {
     transform: rotateY(0deg);
@@ -198,5 +218,19 @@ header > #header-search-bar #header-search-btn {
   100% {
     transform: rotate(0);
   }
+}
+
+#article-list>.article-list-row>.item>a.list-title>.list-writer>.list-category>span {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+}
+
+@font-face {
+  font-family: 'starcraft';
+  src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
+}
+
+@font-face {
+  font-family: 'FontAwesome5';
+  src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);
 }
 

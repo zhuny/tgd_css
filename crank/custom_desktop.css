@@ -2,6 +2,10 @@ html, body {
   background-color: #fbf3d0;
 }
 
+audio, canvas, progress, video {
+  max-width: 100%;
+}
+
 header {
   margin-bottom: 24px;
   background: #edce42;
@@ -188,16 +192,12 @@ header #right-search-form>#right-search-btn {
 #article-reply-area #reply-real-area .reply > .reply-header, 
 #article-reply-area #reply-best-area .reply>.reply-header {
   background-color: #f6e7a2;
-}
-
-#article-reply-area #reply-real-area, 
-#article-reply-area #reply-best-area {
-  padding: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 #article-reply-area #reply-real-area .reply, 
 #article-reply-area #reply-best-area .reply {
-  border: none;
+  border-radius: 8px;
 }
 
 #article-content-wrapper>.header {
@@ -234,12 +234,12 @@ header #right-search-form>#right-search-btn {
 }
 
 #article-list>.article-list-row.hot {
-  background-color: #edce42;
+  background-color: #f6e7a2;
 }
 
 #article-list>.article-list-row>.item>.list-title>a,
 #article-list>.article-list-row>.item>.list-title>a:visited {
-  color: #000000;
+  color: #000000!important;
 }
 
 #board-info #board-info-bottom #addFavoriteBtn i {
@@ -260,6 +260,10 @@ header #right-search-form>#right-search-btn {
 
 #board-info #viewers-area::after {
   content: "명 환영합니다.";
+}
+
+#article-info>h2>span.category {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
 }
 
 @font-face {
