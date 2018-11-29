@@ -78,7 +78,6 @@ header > #header-search-bar #header-search-btn {
   color: {{ 10 }};
 }
 
-
 #board-info #board-info-bottom #addFavoriteBtn i {
   color: {{ 40 }};
 }
@@ -113,6 +112,12 @@ header > #header-search-bar #header-search-btn {
 #article-reply-area #reply-real-area .reply, 
 #article-reply-area #reply-best-area .reply {
   border-radius: 8px;
+}
+
+#article-info>h2>span.category {
+  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+  border-right: 2px solid {{ 50 }};
+  padding-right: 4px;
 }
 
 #article-list #article-list-category {
