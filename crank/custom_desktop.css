@@ -1,5 +1,10 @@
 html, body {
   background-color: #fbf3d0;
+  background-image: url(https://github.com/zhuny/tgd_css/raw/master/crank/crank_new-1543767543.png), url(https://github.com/zhuny/tgd_css/raw/master/crank/crank_old-1543767225.png);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 222px, auto 222px;
+  background-attachment: fixed, fixed;
 }
 
 audio, canvas, progress, video {
