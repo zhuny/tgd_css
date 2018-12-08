@@ -60,6 +60,13 @@ header #right-search-form>#right-search-btn {
   color: {{ 45 }};
 }
 
+#board-info h1>a {
+  color: transparent;
+  background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/crank_logo.gif);
+  background-size: cover;
+  background-position: 0 center;
+}
+
 #main .menu-wrapper .spacer {
   background-color: {{ 80 }}
 }
