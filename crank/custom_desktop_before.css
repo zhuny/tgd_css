@@ -1,7 +1,7 @@
 
 html, body {
   background-color: {{ 90 }};
-  background-image: url(https://github.com/zhuny/tgd_css/raw/master/crank/crank_new-1543767543.png), url(https://github.com/zhuny/tgd_css/raw/master/crank/crank_old-1543767225.png);
+  background-image: url({{ crank/crank_new-1543767543.png }}), url({{ crank/crank_old-1543767225.png }});
   background-position: left bottom, right bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: auto 222px, auto 222px;
@@ -19,7 +19,7 @@ header {
 }
 
 header .container .row .col-xs-4 {
-  background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/logo_new.png);
+  background-image: url({{ crank/logo_new.png }});
   background-repeat: no-repeat;
   background-position: 15px center;
 }
@@ -62,7 +62,7 @@ header #right-search-form>#right-search-btn {
 
 #board-info h1>a {
   color: transparent;
-  background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/crank_logo.gif);
+  background-image: url({{ crank/crank_logo.gif }});
   background-size: cover;
   background-position: 0 center;
 }
