@@ -213,12 +213,25 @@ header #right-search-form>#right-search-btn {
   border-radius: 8px;
 }
 
+#article-reply-area > .header h5 {
+  color: {{ 25 }};
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, 
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: {{ 25 }};
+}
+
 #article-content-wrapper>.header {
   border-top-color: {{ 35 }};
   background-color: {{ 80 }};
 }
 
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: {{ 25 }};
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
   color: {{ 25 }};
 }
 

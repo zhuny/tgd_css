@@ -43,6 +43,7 @@ header>#header-area>#header-search-link {
   background-image: url(https://raw.githubusercontent.com/zhuny/tgd_css/master/crank/crank_logo.gif);
   background-size: cover;
   background-position: 0 center;
+  padding: 4px 16px;
 }
 
 #header-top-notice {
@@ -146,7 +147,11 @@ header > #header-search-bar #header-search-btn {
 }
 
 #article-list>.article-list-row>.item>.list-header>span {
-  background-color: #75610b;
+  background-color: {{ 25 }};
+}
+
+#article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
+  color: {{ 25 }};
 }
 
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
@@ -172,7 +177,7 @@ header > #header-search-bar #header-search-btn {
 }
 
 .pagination>li>a {
-  color: #a3880f;
+  color: {{ 35 }};
 }
 
 .list-title .fa-star:before {
