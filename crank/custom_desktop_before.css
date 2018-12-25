@@ -1,10 +1,12 @@
 
 html, body {
   background-color: {{ 90 }};
-  background-image: url({{ crank/crank_megaman2.png }});
+  background-image: url({{ crank/crank_megaman3-1545751339.png }});
   background-position: left bottom;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 350px auto;
+
 }
 
 audio, canvas, progress, video {
