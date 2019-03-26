@@ -34,6 +34,12 @@ header #right-search-form>#right-search-btn {color: #d2af14;}
 .pagination>li>a {color: #a3880f;}
 .pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover {color: #a3880f;}
 .list-title .fa-star:before {display: inline-block;perspective: 100px;animation-name: rotate_star;animation-duration: 2s;animation-iteration-count: infinite;}
+/* neighbor article area */#article-neighbor-list {padding: 0;}
+#article-neighbor-list>div {background-color: #f8edb9;}
+#article-neighbor-list>div:hover {background-color: #fbf3d0;}
+#article-neighbor-list>div>.indicator {background-color: #f6e7a2;padding: 0 1em;}
+#article-neighbor-list>div>.subject {padding: 0 1em;}
+#article-neighbor-list>div>span.author {padding: 0 1em;color: #5d4e09;background-color: #f6e7a2;}
 /* hello */#article-list>.article-list-row>.item>.list-title>small.favo {display: inline-block;perspective: 100px;animation-name: swing_heart;animation-duration: 2s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;}
 #article-list>.article-list-row.hot>.item>.list-title>small.favo {color: red;}
 #article-content-wrapper {padding: 0;}

@@ -180,12 +180,53 @@ header > #header-search-bar #header-search-btn {
   color: {{ 35 }};
 }
 
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: {{ 35 }};
+}
+
 .list-title .fa-star:before {
   display: inline-block;
   perspective: 100px;
   animation-name: rotate_star;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+/* neighbor article area */
+#comment-write-form {
+  margin: 1em 0 0 0;
+}
+
+#article-neighbor-list {
+  padding: 0;
+  margin-top: 0px!important;
+  margin-bottom: 14px;
+}
+
+#article-neighbor-list>div {
+  background-color: {{ 85 }};
+}
+
+#article-neighbor-list>div:hover {
+  background-color: {{ 90 }};
+}
+
+#article-neighbor-list>div>.indicator {
+  background-color: {{ 80 }};
+  padding: 0 1em;
+}
+
+#article-neighbor-list>div>.subject {
+  padding: 0 1em;
+}
+
+#article-neighbor-list>div>span.author {
+  padding: 0 1em;
+  color: {{ 20 }};
+  background-color: {{ 80 }};
 }
 
 #article-list>.article-list-row>.item>.list-title>small.favo {

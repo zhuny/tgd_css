@@ -190,6 +190,34 @@ header #right-search-form>#right-search-btn {
   animation-iteration-count: infinite;
 }
 
+/* neighbor article area */
+#article-neighbor-list {
+  padding: 0;
+}
+
+#article-neighbor-list>div {
+  background-color: {{ 85 }};
+}
+
+#article-neighbor-list>div:hover {
+  background-color: {{ 90 }};
+}
+
+#article-neighbor-list>div>.indicator {
+  background-color: {{ 80 }};
+  padding: 0 1em;
+}
+
+#article-neighbor-list>div>.subject {
+  padding: 0 1em;
+}
+
+#article-neighbor-list>div>span.author {
+  padding: 0 1em;
+  color: {{ 20 }};
+  background-color: {{ 80 }};
+}
+
 /* hello */
 #article-list>.article-list-row>.item>.list-title>small.favo {
   display: inline-block;

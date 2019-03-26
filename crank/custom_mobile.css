@@ -36,7 +36,15 @@ header > #header-search-bar #header-search-btn {color: #d2af14;}
 #article-list>.article-list-row>.item>a.list-title:visited {color: #666666!important;}
 .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover {background-color: #edce42;border-color: #edce42;}
 .pagination>li>a {color: #a3880f;}
+.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover {color: #a3880f;}
 .list-title .fa-star:before {display: inline-block;perspective: 100px;animation-name: rotate_star;animation-duration: 2s;animation-iteration-count: infinite;}
+/* neighbor article area */#comment-write-form {margin: 1em 0 0 0;}
+#article-neighbor-list {padding: 0;margin-top: 0px!important;margin-bottom: 14px;}
+#article-neighbor-list>div {background-color: #f8edb9;}
+#article-neighbor-list>div:hover {background-color: #fbf3d0;}
+#article-neighbor-list>div>.indicator {background-color: #f6e7a2;padding: 0 1em;}
+#article-neighbor-list>div>.subject {padding: 0 1em;}
+#article-neighbor-list>div>span.author {padding: 0 1em;color: #5d4e09;background-color: #f6e7a2;}
 #article-list>.article-list-row>.item>.list-title>small.favo {display: inline-block;perspective: 100px;animation-name: swing_heart;animation-duration: 2s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;}
 #board-info #viewers-area i {display: none;}
 #board-info #viewers-area::before {content: "귀한 곳에 누추한 ";}
