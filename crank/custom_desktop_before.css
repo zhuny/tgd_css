@@ -175,6 +175,13 @@ header #right-search-form>#right-search-btn {
   color: {{ 35 }};
 }
 
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: {{ 35 }};
+}
+
 .list-title .fa-star:before {
   display: inline-block;
   perspective: 100px;

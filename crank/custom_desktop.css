@@ -32,6 +32,7 @@ header #right-search-form>#right-search-btn {color: #d2af14;}
 #article-list #article-list-menu {width: auto;margin-left: 1em;margin-right: 1em;}
 .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover {background-color: #edce42;border-color: #edce42;}
 .pagination>li>a {color: #a3880f;}
+.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover {color: #a3880f;}
 .list-title .fa-star:before {display: inline-block;perspective: 100px;animation-name: rotate_star;animation-duration: 2s;animation-iteration-count: infinite;}
 /* hello */#article-list>.article-list-row>.item>.list-title>small.favo {display: inline-block;perspective: 100px;animation-name: swing_heart;animation-duration: 2s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;}
 #article-list>.article-list-row.hot>.item>.list-title>small.favo {color: red;}
