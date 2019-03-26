@@ -44,9 +44,9 @@ header #right-search-form>#right-search-btn {color: #d2af14;}
 #article-list>.article-list-row>.item>.list-title>small.comment-count {color: #75610b;}
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {color: #75610b;}
 #article-list>.article-list-row>.item>.list-header {border-left: none;}
-#article-list #article-list-category>a {font-family: "FontAwesome", "starcraft", "FontAwesome5";}
+#article-list #article-list-category>a {font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";}
 #article-list>.article-list-row>.item>.list-title>.list-category {padding-right: 0;border-right: none;}
-#article-list>.article-list-row>.item>.list-title>.list-category>span {font-family: "FontAwesome", "starcraft", "FontAwesome5";font-size: inherit;width: 12px;text-overflow: clip;letter-spacing: 3px;}
+#article-list>.article-list-row>.item>.list-title>.list-category>span {font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";font-size: inherit;width: 12px;text-overflow: clip;letter-spacing: 3px;}
 #article-content-wrapper>.footer {background-color: #f6e7a2;}
 #article-list>.article-list-row.hot {background-color: #f6e7a2;}
 #article-list>.article-list-row>.item>.list-title>a,#article-list>.article-list-row>.item>.list-title>a:visited {color: #000000!important;}
@@ -55,9 +55,10 @@ header #right-search-form>#right-search-btn {color: #d2af14;}
 #board-info #viewers-area::before {content: "귀한 곳에 누추한 ";}
 #board-info #viewers-area #viewers {font-weight: 700;}
 #board-info #viewers-area::after {content: "명 환영합니다.";}
-#article-info>h2>span.category {font-family: "FontAwesome", "starcraft", "FontAwesome5";}
-@font-face {font-family: 'starcraft';src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);}
-@font-face {font-family: 'FontAwesome5';src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);}
+#article-info>h2>span.category {font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";}
+@font-face {font-family: "starcraft";src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);}
+@font-face {font-family: "FontAwesome5-brands";src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);}
+@font-face {font-family: "FontAwesome5-regular";src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-regular-400.ttf);}
 @keyframes rotate_star {
   from {transform: rotateY(0deg);}
   to {transform: rotateY(180deg);}

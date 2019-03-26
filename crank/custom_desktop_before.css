@@ -239,7 +239,7 @@ header #right-search-form>#right-search-btn {
 }
 
 #article-list #article-list-category>a {
-  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+  font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-category {
@@ -248,7 +248,7 @@ header #right-search-form>#right-search-btn {
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-category>span {
-  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+  font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";
   font-size: inherit;
   width: 12px;
   text-overflow: clip;
@@ -289,17 +289,22 @@ header #right-search-form>#right-search-btn {
 }
 
 #article-info>h2>span.category {
-  font-family: "FontAwesome", "starcraft", "FontAwesome5";
+  font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";
 }
 
 @font-face {
-  font-family: 'starcraft';
+  font-family: "starcraft";
   src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
 }
 
 @font-face {
-  font-family: 'FontAwesome5';
+  font-family: "FontAwesome5-brands";
   src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-brands-400.ttf);
+}
+
+@font-face {
+  font-family: "FontAwesome5-regular";
+  src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-regular-400.ttf);
 }
 
 @keyframes rotate_star {
