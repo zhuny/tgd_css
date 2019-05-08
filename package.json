@@ -1,0 +1,34 @@
+{
+  "name": "tgd_css",
+  "version": "1.0.0",
+  "description": "트게더 CSS 제작",
+  "main": "main.js",
+  "scripts": {
+    "less": "webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuny/tgd_css.git"
+  },
+  "keywords": [
+    "tgd",
+    "css"
+  ],
+  "author": "zhuny@kaist.ac.kr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuny/tgd_css/issues"
+  },
+  "homepage": "https://github.com/zhuny/tgd_css#readme",
+  "dependencies": {
+    "css-loader": "^2.1.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2"
+  }
+}
