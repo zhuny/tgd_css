@@ -1,1 +1,137 @@
 @import "common";
+
+#article-info {
+    >h2 {
+        >span.category {
+            border-right: 2px solid @theme_50;
+            font-family: "FontAwesome", "starcraft", "FontAwesome5";
+            padding-right: 4px;
+        }
+    }
+}
+
+#article-list {
+    #article-list-category {
+        >a {
+            font-family: "FontAwesome", "starcraft", "FontAwesome5";
+        }
+    }
+
+    >.article-list-row {
+        >.item {
+            >a.list-title {
+                &:visited {
+                    color: #666666!important;
+                }
+
+                >.list-writer {
+                    >.list-category {
+                        >span {
+                            font-family: "FontAwesome", "starcraft", "FontAwesome5";
+                        }
+                    }
+                }
+
+                >.list-writer.logged {
+                    >span {
+                        color: @theme_25;
+                    }
+                }
+
+                >.title-value {
+                    max-width: 180px;
+                }
+
+                >small.comment-count {
+                    color: @theme_25;
+                }
+            }
+        }
+    }
+
+    >.article-list-row.hot {
+        background-color: @theme_75;
+    }
+}
+
+#article-neighbor-list {
+    margin-bottom: 14px;
+    margin-top: 0px!important;
+}
+
+#board-info {
+    #viewers-area {
+        &::after {
+            content: "명";
+        }
+    }
+
+    >h1 {
+        width: 100%;
+        >a {
+            background-image: url("@{base_url}/crank_logo.gif");
+            background-position: 0 center;
+            background-size: cover;
+            color: transparent;
+            padding: 4px 16px;
+        }
+    }
+}
+
+#comment-write-form {
+    margin: 1em 0 0 0;
+}
+
+#goClipBtn {
+    margin-right: 42px;
+}
+
+#header-top-notice {
+    background-color: @theme_59;
+    strong.notice-badge {
+        background-color: @theme_45;
+    }
+}
+
+.frame {
+    background-color: @theme_59;
+}
+
+header {
+    border-bottom-color: @theme_35;
+    >#header-area {
+        >#header-search-link {
+            background-color: @theme_45;
+            color: @theme_30;
+        }
+
+        >a {
+            >h1 {
+                background-image: url("@{base_url}/logo_new.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+
+    >#header-search-bar {
+        #header-search-btn {
+            color: @theme_45;
+        }
+
+        #header-search-input {
+            border-color: @theme_45;
+        }
+    }
+}
+
+nav#nav {
+    >.nav-header {
+        background-color: @theme_59;
+        color: @theme_0;
+
+        a {
+            color: @theme_0;
+        }
+    }
+}
