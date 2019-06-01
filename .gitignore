@@ -2,3 +2,4 @@
 node_modules/
 # webpack result file
 */dist/*
+package-lock.json
