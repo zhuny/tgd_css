@@ -60,6 +60,21 @@
 }
 
 #board-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+
+    @media screen and (max-width: 576px) {
+        justify-content: flex-start;
+
+        >h1 {
+            order: 0!important;
+            width: 100%;
+        }
+    }
+
     #viewers-area {
         &::before {
             content: "오늘자 ADA는 ";
@@ -71,23 +86,22 @@
     }
 
     >h1 {
-        width: 100%;
+        order: 1;
+        flex-grow: 1;
+
         >a {
             background-image: url("@{base_url}/crank_logo.gif");
             background-position: 0 center;
             background-size: cover;
             color: transparent;
             padding: 4px 16px;
+            float: none!important;
         }
     }
 }
 
 #comment-write-form {
     margin: 1em 0 0 0;
-}
-
-#goClipBtn {
-    margin-right: 42px;
 }
 
 #header-top-notice {
