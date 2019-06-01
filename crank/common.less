@@ -238,33 +238,31 @@
   src: url(https://use.fontawesome.com/releases/v5.0.1/webfonts/fa-regular-400.ttf);
 }
 
-@keyframes {
-    rotate_star {
-        from {
-            transform: rotateY(0deg);
-        }
-
-        to {
-            transform: rotateY(180deg);
-        }
+@keyframes rotate_star {
+    from {
+        transform: rotateY(0deg);
     }
 
-    swing_heart {
-        0% {
-            transform: rotate(0);
-        }
+    to {
+        transform: rotateY(180deg);
+    }
+}
 
-        100% {
-            transform: rotate(0);
-        }
+@keyframes swing_heart {
+    0% {
+        transform: rotate(0);
+    }
 
-        25% {
-            transform: rotate(-10deg);
-        }
+    100% {
+        transform: rotate(0);
+    }
 
-        75% {
-            transform: rotate(+10deg);
-        }
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(+10deg);
     }
 }
 
