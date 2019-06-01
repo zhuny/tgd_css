@@ -56,9 +56,9 @@ html {
                     >span {
                         font-family: "FontAwesome", "starcraft", "FontAwesome5-brands";
                         font-size: inherit;
-                        letter-spacing: 3px;
+                        letter-spacing: 5px;
                         text-overflow: clip;
-                        width: 12px;
+                        width: 14px;
                     }
                 }
 
@@ -102,8 +102,12 @@ html {
     }
 
     #viewers-area {
+        &::before {
+            content: "안녕하세요 고객님, 오늘자 ADA는 ";
+        }
+
         &::after {
-            content: "명 환영합니다.";
+            content: "0원입니다. 행복하세요 고객님.";
         }
     }
 
@@ -182,6 +186,8 @@ header {
         }
 
         #header-top-notice {
+            visibility: hidden;
+
             strong.notice-badge {
                 background-color: @theme_45;
             }
