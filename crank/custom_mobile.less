@@ -40,6 +40,11 @@
 
                 >.title-value {
                     max-width: 83%;
+
+                    @media screen and (max-width: 600px) { max-width: 360px; }
+                    @media screen and (max-width: 540px) { max-width: 310px; }
+                    @media screen and (max-width: 480px) { max-width: 250px; }
+                    @media screen and (max-width: 420px) { max-width: 190px; }
                 }
 
                 >small.comment-count {
@@ -64,7 +69,6 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: row-reverse;
-
 
     @media screen and (max-width: 576px) {
         justify-content: flex-start;
