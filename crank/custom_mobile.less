@@ -81,11 +81,11 @@
 
     #viewers-area {
         &::before {
-            content: "오늘자 ADA는 ";
+            content: "오늘의 CRANKTV는 ";
         }
 
         &::after {
-            content: "로 떡락중~";
+            content: "ADA입니다";
         }
     }
 
@@ -94,12 +94,13 @@
         flex-grow: 1;
 
         >a {
-            background-image: url("@{base_url}/anktv_alpha.png");
+            background-image: url("@{base_url}/cranktv_alpha.png");
             background-position: 0 center;
             background-size: cover;
             color: transparent;
             padding: 4px 16px;
             float: none!important;
+            user-select: none;
         }
     }
 }

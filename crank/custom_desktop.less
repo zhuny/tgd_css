@@ -103,20 +103,21 @@ html {
 
     #viewers-area {
         &::before {
-            content: "오늘자 ADA는 ";
+            content: "오늘의 CRANKTV는 ";
         }
 
         &::after {
-            content: "원입니다~ ADA해버렸죠~";
+            content: "ADA입니다.";
         }
     }
 
     h1 {
-        >a {
-            background-image: url("@{base_url}/anktv_alpha.png");
+        a {
+            background-image: url("@{base_url}/cranktv_alpha.png");
             background-position: 0 center;
             background-size: cover;
             color: transparent;
+            user-select: none;
         }
     }
 }
