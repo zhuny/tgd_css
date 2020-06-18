@@ -1,0 +1,72 @@
+@import "common";
+
+header {
+  border-bottom-color: @primary_color;
+
+  >#header-area {
+    >a {
+      >h1 {
+        background-image: url(@base_url);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    #header-search-link {
+      color: @primary_color;
+    }
+  }
+}
+
+nav#nav {
+  >.nav-header {
+    background-color: @primary_color;
+  }
+}
+
+#header-top-notice {
+  strong.notice-badge {
+    background: @primary_color;
+  }
+}
+
+#article-list {
+  >.article-list-row {
+    >.item {
+      >a.list-title {
+        >small.comment-count {
+          color: @primary_color;
+        }
+
+        >.list-writer.logged {
+          >span {
+            color: @primary_color;
+          }
+        }
+      }
+
+      >.list-header {
+        >span {
+          background-color: @primary_color;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  >.active {
+    >a, >span {
+      &, &:focus, &:hover {
+        background-color: @primary_color;
+        border-color: @primary_color;
+      }
+    }
+  }
+
+  >li {
+    a, span {
+      color: @primary_color;
+    }
+  }
+}
