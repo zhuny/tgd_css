@@ -70,3 +70,41 @@ nav#nav {
     }
   }
 }
+
+#article-reply-area {
+  >.header {
+    h5 {
+      color: @primary_color;
+    }
+  }
+}
+
+#article-reply-area {
+  #reply-real-area, #reply-best-area {
+    .reply {
+      >.reply-header {
+        >.reply-writer.logged {
+          color: @primary_color;
+        }
+      }
+    }
+  }
+}
+
+.btn-primary {
+  background-color: @primary_color;
+}
+
+#article-list {
+  #article-list-category{
+    &, >a {
+      background-color: lighten(@primary_color, 60%);
+    }
+  }
+}
+
+#board-info {
+  >a.board-right-menu {
+    color: @primary_color;
+  }
+}
