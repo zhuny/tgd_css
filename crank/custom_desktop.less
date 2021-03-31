@@ -94,11 +94,26 @@ html {
 #board-info {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    position: relative;
+
+    &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: 7px;
+        right: 8px;
+        width: 49px;
+        height: 49px;
+        background-image: url("@{base_url}/murzoltv.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 
     #board-info-profile-img {
         bottom: 6px;
         left: 6px;
         position: relative;
+        display: none;
     }
 
     #viewers-area {
@@ -119,7 +134,7 @@ html {
 
     h1 {
         >a {
-            background-image: url("@{base_url}/cranktv_alpha.png");
+            background-image: url("@{base_url}/murzoltv_logo.png");
             background-position: 0 center;
             background-size: cover;
             color: transparent;

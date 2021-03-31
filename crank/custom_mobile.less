@@ -69,6 +69,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: row-reverse;
+    align-items: center;
 
     @media screen and (max-width: 576px) {
         justify-content: flex-start;
@@ -77,6 +78,22 @@
             order: 0!important;
             width: 100%;
         }
+    }
+
+    &::before {
+        content: " ";
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        background-image: url("@{base_url}/murzoltv.jpg");
+        background-size: cover;
+        background-position: center;
+        order: 2;
+        margin-left: 10px;
+    }
+
+    #board-info-profile-img {
+        display: none;
     }
 
     #viewers-area {
