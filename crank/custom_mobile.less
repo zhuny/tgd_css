@@ -69,6 +69,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: row-reverse;
+    align-items: center;
 
     @media screen and (max-width: 576px) {
         justify-content: flex-start;
@@ -79,13 +80,29 @@
         }
     }
 
+    &::before {
+        content: " ";
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        background-image: url("@{base_url}/murzoltv.jpg");
+        background-size: cover;
+        background-position: center;
+        order: 2;
+        margin-left: 10px;
+    }
+
+    #board-info-profile-img {
+        display: none;
+    }
+
     #viewers-area {
         &::before {
-            content: "오늘의 CRANKTV는 ";
+            content: "오늘의 MURZOLTV는 ";
         }
 
         &::after {
-            content: "ADA입니다";
+            content: "ANK입니다";
         }
     }
 
