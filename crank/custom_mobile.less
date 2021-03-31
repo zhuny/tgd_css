@@ -61,23 +61,16 @@
 
 #article-neighbor-list {
     margin-bottom: 14px;
-    margin-top: 0px!important;
+    margin-top: 0!important;
 }
 
 #board-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
     align-items: center;
 
     @media screen and (max-width: 576px) {
         justify-content: flex-start;
-
-        >h1 {
-            order: 0!important;
-            width: 100%;
-        }
     }
 
     &::before {
@@ -88,8 +81,8 @@
         background-image: url("@{base_url}/murzoltv.jpg");
         background-size: cover;
         background-position: center;
-        order: 2;
         margin-left: 10px;
+        border-radius: 6px;
     }
 
     #board-info-profile-img {
@@ -113,11 +106,10 @@
     }
 
     >h1 {
-        order: 1;
         flex-grow: 1;
 
         >a {
-            background-image: url("@{base_url}/cranktv_alpha.png");
+            background-image: url("@{base_url}/murzoltv_logo.png");
             background-position: 0 center;
             background-size: cover;
             color: transparent;
