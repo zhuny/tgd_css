@@ -98,11 +98,17 @@
 
     #viewers-area {
         &::before {
-            content: "오늘의 MURZOLTV는 ";
+            content: "X";
+            padding: 14px 0 14px 21px;
+            line-height: 21px;
+            background-image: url("https://static-cdn.jtvnw.net/emoticons/v1/304937222/1.0");
+            background-size: 21px 21px;
+            background-position: left center;
+            background-repeat: no-repeat;
         }
 
         &::after {
-            content: "ANK입니다";
+            content: "";
         }
     }
 
@@ -118,6 +124,10 @@
             padding: 4px 24px;
             float: none!important;
             user-select: none;
+
+            &.badge-live {
+                padding: 4px 8px;
+            }
         }
     }
 }
