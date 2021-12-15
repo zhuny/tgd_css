@@ -11,6 +11,10 @@ html {
             background: transparent;
         }
 
+        a {
+            color: @primary_color;
+        }
+
         header {
             /* 로고밑 NAV bar */
 
@@ -150,7 +154,7 @@ html {
             > li {
                 > a, > span {
                     &, &:focus, &:hover {
-                        color: @primary_color;
+                        color: white;
                     }
                 }
             }
@@ -168,6 +172,11 @@ html {
                     > .reply-header {
                         > .reply-writer.logged {
                             color: @primary_color;
+                        }
+                        > .reply-menu {
+                            a {
+                                color: @primary_color;
+                            }
                         }
                     }
                 }
@@ -194,6 +203,24 @@ html {
 
         .btn-primary {
             background: @primary_color !important;
+        }
+
+        #comment-write-form-area {
+            .fr-toolbar {
+                border-top-color: @primary_color;
+            }
+        }
+
+        .input-group-btn {
+            i.fa-search {
+                color: @primary_color;
+            }
+        }
+
+        footer {
+            a {
+                color: @primary_color;
+            }
         }
     }
 }
