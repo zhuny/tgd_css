@@ -1,5 +1,7 @@
 @import "common";
 
+
+
 html {
     background: linear-gradient(to bottom, #F5F5DC, #F5F5DC);
     height: auto !important;
@@ -8,7 +10,6 @@ html {
         body {
             background: transparent;
         }
-
 
         header {
             /* 로고밑 NAV bar */
@@ -108,14 +109,16 @@ html {
                     background: white;
                 }
             }
-        }
 
-        #article-list {
             > .article-list-row {
                 > .item {
                     > .list-header {
                         > span {
                             background-color: @primary_color;
+                        }
+
+                        > strong, > b {
+                            color: @primary_color;
                         }
                     }
 
