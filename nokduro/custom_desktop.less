@@ -3,6 +3,188 @@
 html {
     background: linear-gradient(to bottom, #F5F5DC, #F5F5DC);
     height: auto !important;
+
+    &.darkmode {
+        body {
+            background: transparent;
+        }
+
+
+        header {
+            /* 로고밑 NAV bar */
+
+            #header-bar {
+                > .row {
+                    border-top: 4px solid @primary_color;
+                }
+
+                /* fa색상 */
+
+                .fa {
+                    color: @primary_color;
+                }
+            }
+
+            /* 헤더 [광고]배경색 */
+
+            #header-top-notice {
+                strong.notice-badge {
+                    background: @primary_color;
+                }
+            }
+
+            #right-search-form {
+                /* 검색폼 보더 */
+
+                > input[type='text'] {
+                    border: 3px solid @primary_color;
+                }
+
+                /* 헤더 검색 버튼 */
+
+                > #right-search-btn {
+                    color: @primary_color;
+                }
+            }
+        }
+
+        /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
+
+        #main {
+            .menu-wrapper {
+                > .header {
+                    background: @primary_color;
+                }
+            }
+        }
+
+        .fa-square:before {
+            color: @primary_color;
+        }
+
+        /* 스트리머 게시판 상단 정보 글씨색상 */
+
+        #board-info {
+            #board-info-bottom {
+                a {
+                    color: @primary_color;
+                }
+            }
+        }
+
+
+        #main {
+            .menu-wrapper {
+                /* 좌측메뉴 숏컷링크 글씨 색상 */
+
+                > a {
+                    > em {
+                        color: @primary_color;
+                    }
+                }
+
+                /* 좌측메뉴 메뉴사이의 공간 색상 */
+
+                .spacer {
+                    background: @primary_color;
+                }
+            }
+        }
+
+        /* 게시글 관련부분 */
+
+        #article-list {
+            #article-list-category {
+                border-top: 2px solid @primary_color;
+                background: white;
+
+                > a {
+                    background: white;
+                }
+            }
+        }
+
+        #article-list {
+            > .article-list-row {
+                > .item {
+                    > .list-header {
+                        > span {
+                            background-color: @primary_color;
+                        }
+                    }
+
+                    > .list-title {
+                        > small.comment-count {
+                            color: @primary_color;
+                        }
+                        > .list-writer.logged {
+                            > span {
+                                color: @primary_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            > .active {
+                > a, > span {
+                    &, &:focus, &:hover {
+            background-color: @primary_color;
+            border-color: @primary_color;
+                    }
+                }
+            }
+            > li {
+                >a, >span {
+                    &, &:focus, &:hover {
+            color: @primary_color;
+                    }
+                }
+            }
+        }
+
+        #article-content-wrapper {
+            > .header {
+                border-top: 2px solid @primary_color;
+            }
+        }
+
+        #article-reply-area {
+            #reply-real-area, #reply-best-area {
+              .reply {
+                  > .reply-header {
+                      > .reply-writer.logged {
+                          color: @primary_color;
+                      }
+                  }
+              }
+            }
+        }
+
+        #article-info {
+            > h2 {
+                > span.category {
+                    color: @primary_color !important;
+                }
+            }
+        }
+
+        #article-reply-area {
+            > .header {
+                h5 {
+                    color: @primary_color;
+                }
+            }
+        }
+
+        /* footer */
+
+        .btn-primary {
+            background: @primary_color !important;
+        }
+    }
 }
 
 body {
