@@ -326,7 +326,7 @@ html.darkmode {
             > .item {
                 > .list-header {
                     > span {
-                        background-color: @theme_25;
+                        background-color: @theme_50;
                     }
 
                     >strong, >b {
@@ -339,14 +339,14 @@ html.darkmode {
 
     #article-neighbor-list {
         > div {
-            background-color: @theme_85;
+            background-color: @theme_30;
 
             &:hover {
-                background-color: @theme_90;
+                background-color: @theme_30;
             }
 
             > .indicator {
-                background-color: @theme_80;
+                background-color: @theme_30;
             }
 
             > span.author {
@@ -357,25 +357,23 @@ html.darkmode {
     }
 
     #article-reply-area {
-        #reply-best-area {
+        #reply-best-area, #reply-real-area {
             .reply {
                 > .reply-header {
-                    background-color: @theme_80;
+                    background-color: @theme_30;
 
                     > .reply-writer.logged {
-                        color: @theme_25;
+                        color: @theme_50;
                     }
-                }
-            }
-        }
 
-        #reply-real-area {
-            .reply {
-                > .reply-header {
-                    background-color: @theme_80;
+                    > .reply-menu {
+                        a {
+                            color: @theme_100;
 
-                    > .reply-writer.logged {
-                        color: @theme_25;
+                            &.comment-report-btn {
+                                color: red;
+                            }
+                        }
                     }
                 }
             }
@@ -383,7 +381,7 @@ html.darkmode {
 
         > .header {
             h5 {
-                color: @theme_25;
+                color: @theme_50;
             }
         }
     }
@@ -471,5 +469,11 @@ html.darkmode {
 
     header {
         background: @theme_main_dark;
+    }
+
+    #comment-write-form-area {
+        .fr-toolbar {
+            border-top-color: @theme_20;
+        }
     }
 }
