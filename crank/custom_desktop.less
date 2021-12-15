@@ -6,19 +6,127 @@ html {
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 350px auto;
+
+    &.darkmode {
+        #article-content-wrapper {
+            > .header {
+                border-top-color: @theme_35;
+            }
+        }
+
+        #article-list {
+            > .article-list-row {
+                > .item {
+                    > .list-title {
+                        > .list-writer.logged {
+                            > span {
+                                color: @theme_25;
+                            }
+                        }
+
+                        > a {
+                            color: #000000 !important;
+
+                            &:visited {
+                                color: #000000 !important;
+                            }
+                        }
+
+                        > small.comment-count {
+                            color: @theme_25;
+                        }
+                    }
+                }
+            }
+
+            > .article-list-row.hot {
+                background-color: @theme_80;
+            }
+
+            > .article-list-row.notice {
+                background-color: @theme_90;
+            }
+        }
+
+        #board-info {
+            h1 {
+                > a {
+                    color: transparent;
+                }
+            }
+        }
+
+        #main {
+            .menu-wrapper {
+                box-shadow: 2px 2px 2px #dddddd;
+
+                .spacer {
+                    background-color: @theme_80;
+                }
+
+                > .header {
+                    background-color: @theme_main;
+                    color: @theme_00;
+
+                    > a {
+                        color: @theme_00;
+                    }
+                }
+
+                > a {
+                    > em {
+                        color: @theme_25;
+                    }
+
+                    > i.fa.fa-square {
+                        color: @theme_25;
+                    }
+                }
+            }
+        }
+
+        body {
+            background-color: @theme_90;
+        }
+
+        header {
+            #header-bar {
+                #header-top-notice {
+                    strong.notice-badge {
+                        background-color: @theme_45;
+                    }
+                }
+
+                > .row {
+                    background-color: @theme_main;
+                    border-top: 2px solid @theme_35;
+                }
+            }
+
+            #right-search-form {
+                > #right-search-btn {
+                    color: @theme_45;
+                }
+
+                > input[type=text] {
+                    border-color: @theme_45;
+                }
+            }
+        }
+    }
 }
 
 #article-content-wrapper {
     padding: 0;
 
-    >.header {
+    > .header {
         border-top-color: @theme_35;
     }
 }
 
 #article-info {
-    >h2 {
-        >span.category {
+    > h2 {
+        > span.category {
             font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
         }
     }
@@ -29,7 +137,7 @@ html {
     padding: 0 0 16px 0;
 
     #article-list-category {
-        >a {
+        > a {
             font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
         }
     }
@@ -40,20 +148,20 @@ html {
         width: auto;
     }
 
-    >.article-list-row {
+    > .article-list-row {
         border-right: none;
 
-        >.item {
-            >.list-header {
+        > .item {
+            > .list-header {
                 border-left: none;
             }
 
-            >.list-title {
-                >.list-category {
+            > .list-title {
+                > .list-category {
                     border-right: none;
                     padding-right: 0;
 
-                    >span {
+                    > span {
                         font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
                         font-size: inherit;
                         letter-spacing: 5px;
@@ -62,31 +170,32 @@ html {
                     }
                 }
 
-                >.list-writer.logged {
-                    >span {
+                > .list-writer.logged {
+                    > span {
                         color: @theme_25;
                     }
                 }
 
-                >a {
-                    color: #000000!important;
+                > a {
+                    color: #000000 !important;
+
                     &:visited {
-                        color: #000000!important;
+                        color: #000000 !important;
                     }
                 }
 
-                >small.comment-count {
+                > small.comment-count {
                     color: @theme_25;
                 }
             }
         }
     }
 
-    >.article-list-row.hot {
+    > .article-list-row.hot {
         background-color: @theme_80;
     }
 
-    >.article-list-row.notice {
+    > .article-list-row.notice {
         background-color: @theme_90;
     }
 }
@@ -119,7 +228,7 @@ html {
     }
 
     h1 {
-        >a {
+        > a {
             background-image: url("@{base_url}/cranktv_alpha.png");
             background-position: 0 center;
             background-size: cover;
@@ -132,7 +241,7 @@ html {
 
 #main {
     #main-content {
-        >div.frame {
+        > div.frame {
             border-right: none;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -149,21 +258,22 @@ html {
             background-color: @theme_80;
         }
 
-        >.header {
+        > .header {
             background-color: @theme_main;
             border-radius: 8px 8px 0 0;
             color: @theme_00;
-            >a {
+
+            > a {
                 color: @theme_00;
             }
         }
 
-        >a {
-            >em {
+        > a {
+            > em {
                 color: @theme_25;
             }
 
-            >i.fa.fa-square {
+            > i.fa.fa-square {
                 color: @theme_25;
             }
         }
@@ -202,7 +312,7 @@ header {
             }
         }
 
-        >.row {
+        > .row {
             background-color: @theme_main;
             border-bottom: none;
             border-left: none;
@@ -212,11 +322,11 @@ header {
     }
 
     #right-search-form {
-        >#right-search-btn {
+        > #right-search-btn {
             color: @theme_45;
         }
 
-        >input[type=text] {
+        > input[type=text] {
             border-color: @theme_45;
         }
     }
