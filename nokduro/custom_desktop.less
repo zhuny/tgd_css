@@ -1,7 +1,6 @@
 @import "common";
 
 
-
 html {
     background: linear-gradient(to bottom, #F5F5DC, #F5F5DC);
     height: auto !important;
@@ -138,6 +137,22 @@ html {
                         }
                     }
                 }
+
+                &:hover {
+                    background-color: darken(@primary_color, 20%) !important;
+
+                    >.item {
+                        >.list-header.v0 {
+                            >span {
+                                background: @primary_color;
+                            }
+                        }
+                    }
+                }
+
+                &.hot {
+                    background-color: darken(@primary_color, 24%);
+                }
             }
         }
 
@@ -173,6 +188,7 @@ html {
                         > .reply-writer.logged {
                             color: @primary_color;
                         }
+
                         > .reply-menu {
                             a {
                                 color: @primary_color;
@@ -215,6 +231,10 @@ html {
             i.fa-search {
                 color: @primary_color;
             }
+        }
+
+        .fr-toolbar {
+            border-top-color: @primary_color;
         }
 
         footer {

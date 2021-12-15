@@ -145,7 +145,7 @@ html.darkmode.mb {
                 color: @primary_color;
             }
 
-            >#header-search-link {
+            > #header-search-link {
                 color: @primary_color;
             }
         }
@@ -160,8 +160,8 @@ html.darkmode.mb {
             background-color: @primary_color;
         }
 
-        >.nav-menu-area {
-            a{
+        > .nav-menu-area {
+            a {
                 &:hover, &.active {
                     color: @primary_color;
                 }
@@ -194,6 +194,7 @@ html.darkmode.mb {
                     > span {
                         background-color: @primary_color;
                     }
+
                     > strong, > b {
                         color: @primary_color;
                     }
@@ -234,7 +235,8 @@ html.darkmode.mb {
                     > .reply-writer.logged {
                         color: @primary_color;
                     }
-                    >.reply-menu {
+
+                    > .reply-menu {
                         a {
                             color: @primary_color;
                         }
@@ -245,7 +247,7 @@ html.darkmode.mb {
     }
 
     #article-content-wrapper {
-        >.header {
+        > .header {
             border-top-color: @primary_color;
         }
     }
@@ -263,9 +265,17 @@ html.darkmode.mb {
             }
         }
 
-        > .article-list-row{
+        > .article-list-row {
             &:hover {
-                background-color: darken(@primary_color, 20%)!important;
+                background-color: darken(@primary_color, 20%) !important;
+
+                > .item {
+                    > .list-header.v0 {
+                        > span {
+                            background: @primary_color;
+                        }
+                    }
+                }
             }
 
             &.hot {
@@ -302,6 +312,10 @@ html.darkmode.mb {
 
     a {
         color: @primary_color;
+    }
+
+    .fr-toolbar {
+        border-top-color: @primary_color;
     }
 
     footer {
