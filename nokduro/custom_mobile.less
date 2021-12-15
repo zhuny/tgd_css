@@ -1,132 +1,271 @@
 @import "common";
 
 header {
-  border-bottom-color: @primary_color;
+    border-bottom-color: @primary_color;
 
-  >#header-area {
-    >a {
-      >h1 {
-        background-image: url(@title_image_url);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    }
+    > #header-area {
+        > a {
+            > h1 {
+                background-image: url(@title_image_url);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
 
-    #header-search-link {
-      color: @primary_color;
+        #header-search-link {
+            color: @primary_color;
+        }
     }
-  }
 }
 
 nav#nav {
-  >.nav-header {
-    background-color: @primary_color;
-  }
+    > .nav-header {
+        background-color: @primary_color;
+    }
 }
 
 #header-top-notice {
-  strong.notice-badge {
-    background: @primary_color;
-  }
+    strong.notice-badge {
+        background: @primary_color;
+    }
 }
 
 #article-list {
-  >.article-list-row {
-    >.item {
-      >a.list-title {
-        >small.comment-count {
-          color: @primary_color;
-        }
+    > .article-list-row {
+        > .item {
+            > a.list-title {
+                > small.comment-count {
+                    color: @primary_color;
+                }
 
-        >.list-writer.logged {
-          >span {
-            color: @primary_color;
-          }
-        }
-      }
+                > .list-writer.logged {
+                    > span {
+                        color: @primary_color;
+                    }
+                }
+            }
 
-      >.list-header {
-        >span {
-          background-color: @primary_color;
+            > .list-header {
+                > span {
+                    background-color: @primary_color;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .pagination {
-  >.active {
-    >a, >span {
-      &, &:focus, &:hover {
-        background-color: @primary_color;
-        border-color: @primary_color;
-      }
-    }
-  }
-
-  >li {
-    a, span {
-      &, &:focus, &:hover {
-        color: @primary_color;
-      }
-    }
-  }
-}
-
-#article-reply-area {
-  >.header {
-    h5 {
-      color: @primary_color;
-    }
-  }
-}
-
-#article-reply-area {
-  #reply-real-area, #reply-best-area {
-    .reply {
-      >.reply-header {
-        >.reply-writer.logged {
-          color: @primary_color;
+    > .active {
+        > a, > span {
+            &, &:focus, &:hover {
+                background-color: @primary_color;
+                border-color: @primary_color;
+            }
         }
-      }
     }
-  }
+
+    > li {
+        a, span {
+            &, &:focus, &:hover {
+                color: @primary_color;
+            }
+        }
+    }
+}
+
+#article-reply-area {
+    > .header {
+        h5 {
+            color: @primary_color;
+        }
+    }
+}
+
+#article-reply-area {
+    #reply-real-area, #reply-best-area {
+        .reply {
+            > .reply-header {
+                > .reply-writer.logged {
+                    color: @primary_color;
+                }
+            }
+        }
+    }
 }
 
 .btn-primary {
-  background-color: @primary_color;
+    background-color: @primary_color;
 }
 
 #article-list {
-  #article-list-category {
-    &, >a {
-      background-color: lighten(@primary_color, 60%);
+    #article-list-category {
+        &, > a {
+            background-color: lighten(@primary_color, 60%);
+        }
     }
-  }
-  >.article-list-row.hot {
-    background-color: lighten(@primary_color, 67%);
-  }
+
+    > .article-list-row.hot {
+        background-color: lighten(@primary_color, 67%);
+    }
 }
 
 #board-info {
-  >a.board-right-menu {
-    color: @primary_color;
-  }
-  #score-area {
-    vertical-align: bottom;
-    margin-left: 8px;
-  }
-  #viewers-area {
-    .fa-user:before {
-      content: url(@icon_image_url);
+    > a.board-right-menu {
+        color: @primary_color;
     }
-  }
+
+    #score-area {
+        vertical-align: bottom;
+        margin-left: 8px;
+    }
+
+    #viewers-area {
+        .fa-user:before {
+            content: url(@icon_image_url);
+        }
+    }
 }
 
 #article-info {
-  >h2 {
-    span.category {
-      color: @primary_color!important;
+    > h2 {
+        span.category {
+            color: @primary_color !important;
+        }
     }
-  }
+}
+
+html.darkmode {
+    header {
+        border-bottom-color: @primary_color;
+
+        > #header-area {
+            > a {
+                > h1 {
+                    background-image: url(@title_image_url);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            #header-search-link {
+                color: @primary_color;
+            }
+        }
+    }
+
+    nav#nav {
+        > .nav-header {
+            background-color: @primary_color;
+        }
+    }
+
+    #header-top-notice {
+        strong.notice-badge {
+            background: @primary_color;
+        }
+    }
+
+    #article-list {
+        > .article-list-row {
+            > .item {
+                > a.list-title {
+                    > small.comment-count {
+                        color: @primary_color;
+                    }
+
+                    > .list-writer.logged {
+                        > span {
+                            color: @primary_color;
+                        }
+                    }
+                }
+
+                > .list-header {
+                    > span {
+                        background-color: @primary_color;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        > .active {
+            > a, > span {
+                &, &:focus, &:hover {
+                    background-color: @primary_color;
+                    border-color: @primary_color;
+                }
+            }
+        }
+
+        > li {
+            a, span {
+                &, &:focus, &:hover {
+                    color: @primary_color;
+                }
+            }
+        }
+    }
+
+    #article-reply-area {
+        > .header {
+            h5 {
+                color: @primary_color;
+            }
+        }
+    }
+
+    #article-reply-area {
+        #reply-real-area, #reply-best-area {
+            .reply {
+                > .reply-header {
+                    > .reply-writer.logged {
+                        color: @primary_color;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-primary {
+        background-color: @primary_color;
+    }
+
+    #article-list {
+        #article-list-category {
+            &, > a {
+                background-color: lighten(@primary_color, 60%);
+            }
+        }
+
+        > .article-list-row.hot {
+            background-color: lighten(@primary_color, 67%);
+        }
+    }
+
+    #board-info {
+        > a.board-right-menu {
+            color: @primary_color;
+        }
+
+        #score-area {
+            vertical-align: bottom;
+            margin-left: 8px;
+        }
+
+        #viewers-area {
+            .fa-user:before {
+                content: url(@icon_image_url);
+            }
+        }
+    }
+
+    #article-info {
+        > h2 {
+            span.category {
+                color: @primary_color !important;
+            }
+        }
+    }
 }
