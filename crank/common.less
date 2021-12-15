@@ -1,5 +1,6 @@
 @import "const";
 
+
 /* 중간에 나오는 이상한 텍스트 광고 */
 #taboola-below-article-text-links,
 #taboola-below-article-text-links-b {
@@ -12,11 +13,11 @@
 }
 
 #article-content-wrapper {
-    >.footer {
+    > .footer {
         background-color: @theme_80;
     }
 
-    >.header {
+    > .header {
         background-color: @theme_80;
     }
 }
@@ -26,21 +27,21 @@
         background-color: @theme_80;
         border-top: none;
 
-        >a {
+        > a {
             background-color: @theme_80;
         }
     }
 
-    >.article-list-row {
-        >.item {
-            >.list-header {
-                >span {
+    > .article-list-row {
+        > .item {
+            > .list-header {
+                > span {
                     background-color: @theme_25;
                 }
             }
 
-            >.list-title {
-                >small.favo {
+            > .list-title {
+                > small.favo {
                     animation-duration: 2s;
                     animation-iteration-count: infinite;
                     animation-name: swing_heart;
@@ -52,10 +53,10 @@
         }
     }
 
-    >.article-list-row.hot {
-        >.item {
-            >.list-title {
-                >small.favo {
+    > .article-list-row.hot {
+        > .item {
+            > .list-title {
+                > small.favo {
                     color: red;
                 }
             }
@@ -66,23 +67,23 @@
 #article-neighbor-list {
     padding: 0;
 
-    >div {
+    > div {
         background-color: @theme_85;
 
         &:hover {
             background-color: @theme_90;
         }
 
-        >.indicator {
+        > .indicator {
             background-color: @theme_80;
             padding: 0 1em;
         }
 
-        >.subject {
+        > .subject {
             padding: 0 1em;
         }
 
-        >span.author {
+        > span.author {
             background-color: @theme_80;
             color: @theme_20;
             padding: 0 1em;
@@ -96,31 +97,33 @@
         .reply {
             border-radius: 8px;
 
-            >.reply-header {
+            > .reply-header {
                 background-color: @theme_80;
                 border-radius: 8px 8px 0 0;
 
-                >.reply-writer.logged {
+                > .reply-writer.logged {
                     color: @theme_25;
                 }
             }
         }
     }
+
     #reply-real-area {
         .reply {
             border-radius: 8px;
 
-            >.reply-header {
+            > .reply-header {
                 background-color: @theme_80;
                 border-radius: 8px 8px 0 0;
 
-                >.reply-writer.logged {
+                > .reply-writer.logged {
                     color: @theme_25;
                 }
             }
         }
     }
-    >.header {
+
+    > .header {
         h5 {
             color: @theme_25;
         }
@@ -176,8 +179,8 @@
 }
 
 .pagination {
-    >.active {
-        >a {
+    > .active {
+        > a {
             background-color: @theme_main;
             border-color: @theme_main;
 
@@ -192,7 +195,7 @@
             }
         }
 
-        >span {
+        > span {
             background-color: @theme_main;
             border-color: @theme_main;
 
@@ -208,8 +211,8 @@
         }
     }
 
-    >li {
-        >a {
+    > li {
+        > a {
             color: @theme_35;
 
             &:focus {
@@ -221,7 +224,7 @@
             }
         }
 
-        >span {
+        > span {
             &:focus {
                 color: @theme_35;
             }
@@ -234,18 +237,18 @@
 }
 
 @font-face {
-  font-family: "starcraft";
-  src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
+    font-family: "starcraft";
+    src: url(https://raw.githubusercontent.com/alexweissman/starcraft-web-icons/master/fonts/font-starcraft.ttf);
 }
 
 @font-face {
-  font-family: "FontAwesome5-solid";
-  src: url(https://use.fontawesome.com/releases/v5.11.1/webfonts/fa-solid-900.ttf);
+    font-family: "FontAwesome5-solid";
+    src: url(https://use.fontawesome.com/releases/v5.11.1/webfonts/fa-solid-900.ttf);
 }
 
 @font-face {
-  font-family: "FontAwesome5-regular";
-  src: url(https://use.fontawesome.com/releases/v5.11.1/webfonts/fa-regular-400.ttf);
+    font-family: "FontAwesome5-regular";
+    src: url(https://use.fontawesome.com/releases/v5.11.1/webfonts/fa-regular-400.ttf);
 }
 
 @keyframes rotate_star {
@@ -298,3 +301,189 @@ video {
     max-width: 100%;
 }
 
+html.darkmode {
+    #article-content-wrapper {
+        > .footer {
+            background-color: @theme_15;
+        }
+
+        > .header {
+            background-color: @theme_15;
+        }
+    }
+
+    #article-list {
+        #article-list-category {
+            background-color: @theme_15;
+            border-top: none;
+
+            > a {
+                background-color: @theme_15;
+            }
+        }
+
+        > .article-list-row {
+            > .item {
+                > .list-header {
+                    > span {
+                        background-color: @theme_50;
+                    }
+
+                    >strong, >b {
+                        color: @theme_100;
+                    }
+                }
+            }
+        }
+    }
+
+    #article-neighbor-list {
+        > div {
+            background-color: @theme_30;
+
+            &:hover {
+                background-color: @theme_30;
+            }
+
+            > .indicator {
+                background-color: @theme_30;
+            }
+
+            > span.author {
+                background-color: @theme_80;
+                color: @theme_20;
+            }
+        }
+    }
+
+    #article-reply-area {
+        #reply-best-area, #reply-real-area {
+            .reply {
+                > .reply-header {
+                    background-color: @theme_30;
+
+                    > .reply-writer.logged {
+                        color: @theme_50;
+                    }
+
+                    > .reply-menu {
+                        a {
+                            color: @theme_100;
+
+                            &.comment-report-btn {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        > .header {
+            h5 {
+                color: @theme_50;
+            }
+        }
+    }
+
+    #board-info {
+        background-color: @theme_20;
+
+        #board-info-bottom {
+            #addFavoriteBtn {
+                i {
+                    color: @theme_40;
+                }
+            }
+        }
+
+        #viewers-area {
+            background-color: @theme_45;
+            color: @theme_10;
+        }
+    }
+
+    .pagination {
+        > .active {
+            > a {
+                background-color: @theme_main;
+                border-color: @theme_main;
+
+                &:focus {
+                    background-color: @theme_main;
+                    border-color: @theme_main;
+                }
+
+                &:hover {
+                    background-color: @theme_main;
+                    border-color: @theme_main;
+                }
+            }
+
+            > span {
+                background-color: @theme_main;
+                border-color: @theme_main;
+
+                &:focus {
+                    background-color: @theme_main;
+                    border-color: @theme_main;
+                }
+
+                &:hover {
+                    background-color: @theme_main;
+                    border-color: @theme_main;
+                }
+            }
+        }
+
+        > li {
+            > a {
+                color: @theme_35;
+
+                &:focus {
+                    color: @theme_35;
+                }
+
+                &:hover {
+                    color: @theme_35;
+                }
+            }
+
+            > span {
+                &:focus {
+                    color: @theme_35;
+                }
+
+                &:hover {
+                    color: @theme_35;
+                }
+            }
+        }
+    }
+
+    .input-group-btn {
+        i.fa-search {
+            color: @theme_95;
+        }
+    }
+
+    header {
+        background: @theme_main_dark;
+    }
+
+    #comment-write-form-area {
+        .fr-toolbar {
+            border-top-color: @theme_20;
+        }
+    }
+
+    .fr-toolbar {
+        border-top-color: @theme_20;
+    }
+
+    footer {
+        a {
+            color: @theme_50;
+        }
+    }
+}

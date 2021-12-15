@@ -1,8 +1,8 @@
 @import "common";
 
 #article-info {
-    >h2 {
-        >span.category {
+    > h2 {
+        > span.category {
             border-right: 2px solid @theme_50;
             font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
             padding-right: 4px;
@@ -12,56 +12,64 @@
 
 #article-list {
     #article-list-category {
-        >a {
+        > a {
             font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
         }
     }
 
-    >.article-list-row {
-        >.item {
-            >a.list-title {
+    > .article-list-row {
+        > .item {
+            > a.list-title {
                 &:visited {
-                    color: #666666!important;
+                    color: #666666 !important;
                 }
 
-                >.list-writer {
-                    >.list-category {
-                        >span {
+                > .list-writer {
+                    > .list-category {
+                        > span {
                             font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
                         }
                     }
                 }
 
-                >.list-writer.logged {
-                    >span {
+                > .list-writer.logged {
+                    > span {
                         color: @theme_25;
                     }
                 }
 
-                >.title-value {
+                > .title-value {
                     max-width: 83%;
 
-                    @media screen and (max-width: 600px) { max-width: 360px; }
-                    @media screen and (max-width: 540px) { max-width: 310px; }
-                    @media screen and (max-width: 480px) { max-width: 250px; }
-                    @media screen and (max-width: 420px) { max-width: 190px; }
+                    @media screen and (max-width: 600px) {
+                        max-width: 360px;
+                    }
+                    @media screen and (max-width: 540px) {
+                        max-width: 310px;
+                    }
+                    @media screen and (max-width: 480px) {
+                        max-width: 250px;
+                    }
+                    @media screen and (max-width: 420px) {
+                        max-width: 190px;
+                    }
                 }
 
-                >small.comment-count {
+                > small.comment-count {
                     color: @theme_25;
                 }
             }
         }
     }
 
-    >.article-list-row.hot {
+    > .article-list-row.hot {
         background-color: @theme_75;
     }
 }
 
 #article-neighbor-list {
     margin-bottom: 14px;
-    margin-top: 0!important;
+    margin-top: 0 !important;
 }
 
 #board-info {
@@ -89,16 +97,16 @@
         }
     }
 
-    >h1 {
+    > h1 {
         flex-grow: 1;
 
-        >a {
+        > a {
             background-image: url("@{base_url}/cranktv_alpha.png");
             background-position: 0 center;
             background-size: cover;
             color: transparent;
             padding: 4px 24px;
-            float: none!important;
+            float: none !important;
             user-select: none;
 
             &.badge-live {
@@ -127,14 +135,15 @@
 
 header {
     border-bottom-color: @theme_35;
-    >#header-area {
-        >#header-search-link {
+
+    > #header-area {
+        > #header-search-link {
             background-color: @theme_45;
             color: @theme_30;
         }
 
-        >a {
-            >h1 {
+        > a {
+            > h1 {
                 background-image: url("@{base_url}/logo_new.png");
                 background-repeat: no-repeat;
                 background-size: 100%;
@@ -142,7 +151,7 @@ header {
         }
     }
 
-    >#header-search-bar {
+    > #header-search-bar {
         #header-search-btn {
             color: @theme_45;
         }
@@ -154,12 +163,114 @@ header {
 }
 
 nav#nav {
-    >.nav-header {
+    > .nav-header {
         background-color: @theme_main;
         color: @theme_00;
 
         a {
             color: @theme_00;
+        }
+    }
+}
+
+html.darkmode.mb {
+    #article-info {
+        > h2 {
+            > span.category {
+                border-right: 2px solid @theme_25;
+            }
+        }
+    }
+
+    #article-list {
+        > .article-list-row {
+            > .item {
+                > a.list-title {
+                    &:visited {
+                        color: #666666 !important;
+                    }
+
+                    > .list-writer.logged {
+                        > span {
+                            color: @theme_50;
+                        }
+                    }
+
+                    > small.comment-count {
+                        color: @theme_50;
+                    }
+                }
+            }
+
+            &:hover {
+                background: @theme_10!important;
+            }
+        }
+
+        > .article-list-row.hot {
+            background-color: @theme_35;
+        }
+    }
+
+    #article-content-wrapper{
+        >.header {
+            border-top-color: @theme_20;
+        }
+    }
+
+    #board-info {
+        >h1 {
+            >a {
+                color: transparent;
+            }
+        }
+    }
+
+    #header-top-notice {
+        background-color: @theme_main_dark;
+
+        strong.notice-badge {
+            background-color: @theme_45;
+        }
+    }
+
+    .frame {
+        background-color: @theme_main_dark;
+    }
+
+    header {
+        border-bottom-color: @theme_15;
+
+        &.nav-down {
+            border-bottom-color: @theme_15;
+        }
+
+        > #header-area {
+            > #header-search-link {
+                background-color: @theme_20;
+                color: @theme_55;
+            }
+        }
+
+        > #header-search-bar {
+            #header-search-btn {
+                color: @theme_70;
+            }
+
+            #header-search-input {
+                border-color: @theme_20;
+            }
+        }
+    }
+
+    nav#nav {
+        > .nav-header {
+            background-color: @theme_main_dark;
+            color: @theme_100;
+
+            a {
+                color: @theme_100;
+            }
         }
     }
 }
