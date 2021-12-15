@@ -23,6 +23,12 @@ html {
                 .fa {
                     color: @primary_color;
                 }
+
+                #header-top-notice {
+                    strong.notice-badge {
+                        background: @primary_color;
+                    }
+                }
             }
 
             /* 헤더 [광고]배경색 */
@@ -117,6 +123,7 @@ html {
                         > small.comment-count {
                             color: @primary_color;
                         }
+
                         > .list-writer.logged {
                             > span {
                                 color: @primary_color;
@@ -131,15 +138,16 @@ html {
             > .active {
                 > a, > span {
                     &, &:focus, &:hover {
-            background-color: @primary_color;
-            border-color: @primary_color;
+                        background-color: @primary_color;
+                        border-color: @primary_color;
                     }
                 }
             }
+
             > li {
-                >a, >span {
+                > a, > span {
                     &, &:focus, &:hover {
-            color: @primary_color;
+                        color: @primary_color;
                     }
                 }
             }
@@ -153,13 +161,13 @@ html {
 
         #article-reply-area {
             #reply-real-area, #reply-best-area {
-              .reply {
-                  > .reply-header {
-                      > .reply-writer.logged {
-                          color: @primary_color;
-                      }
-                  }
-              }
+                .reply {
+                    > .reply-header {
+                        > .reply-writer.logged {
+                            color: @primary_color;
+                        }
+                    }
+                }
             }
         }
 
