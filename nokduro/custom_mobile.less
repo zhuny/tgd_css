@@ -159,6 +159,14 @@ html.darkmode.mb {
         > .nav-header {
             background-color: @primary_color;
         }
+
+        >.nav-menu-area {
+            a{
+                &:hover, &.active {
+                    color: @primary_color;
+                }
+            }
+        }
     }
 
     #header-top-notice {
@@ -219,17 +227,26 @@ html.darkmode.mb {
                 color: @primary_color;
             }
         }
-    }
 
-    #article-reply-area {
         #reply-real-area, #reply-best-area {
             .reply {
                 > .reply-header {
                     > .reply-writer.logged {
                         color: @primary_color;
                     }
+                    >.reply-menu {
+                        a {
+                            color: @primary_color;
+                        }
+                    }
                 }
             }
+        }
+    }
+
+    #article-content-wrapper {
+        >.header {
+            border-top-color: @primary_color;
         }
     }
 
@@ -239,13 +256,21 @@ html.darkmode.mb {
 
     #article-list {
         #article-list-category {
+            border-top-color: @primary_color;
+
             &, > a {
-                background-color: darken(@primary_color, 13%);
+                background-color: darken(@primary_color, 17%);
             }
         }
 
-        > .article-list-row.hot {
-            background-color: darken(@primary_color, 20%);
+        > .article-list-row{
+            &:hover {
+                background-color: darken(@primary_color, 20%)!important;
+            }
+
+            &.hot {
+                background-color: darken(@primary_color, 24%);
+            }
         }
     }
 
@@ -263,10 +288,20 @@ html.darkmode.mb {
         }
     }
 
+    #comment-write-form-area {
+        .fr-toolbar {
+            border-top-color: @primary_color;
+        }
+    }
+
     .input-group-btn {
         i.fa-search {
             color: @primary_color;
         }
+    }
+
+    a {
+        color: @primary_color;
     }
 
     footer {
