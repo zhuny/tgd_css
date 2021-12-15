@@ -8,6 +8,8 @@ html {
     background-size: 350px auto;
 
     &.darkmode {
+        background: @theme_15;
+
         #article-content-wrapper {
             > .header {
                 border-top-color: @theme_35;
@@ -25,10 +27,10 @@ html {
                         }
 
                         > a {
-                            color: #000000 !important;
+                            color: #d9d9d9 !important;
 
                             &:visited {
-                                color: #000000 !important;
+                                color: #d9d9d9 !important;
                             }
                         }
 
@@ -37,14 +39,18 @@ html {
                         }
                     }
                 }
+
+                &:hover {
+                    background: @theme_10!important;
+                }
             }
 
             > .article-list-row.hot {
-                background-color: @theme_80;
+                background-color: @theme_25;
             }
 
             > .article-list-row.notice {
-                background-color: @theme_90;
+                background-color: @theme_30;
             }
         }
 
@@ -58,15 +64,15 @@ html {
 
         #main {
             .menu-wrapper {
-                box-shadow: 2px 2px 2px #dddddd;
+                box-shadow: 2px 2px 2px #888888;
 
                 .spacer {
-                    background-color: @theme_80;
+                    background-color: @theme_30;
                 }
 
                 > .header {
-                    background-color: @theme_main;
-                    color: @theme_00;
+                    background-color: @theme_main_dark;
+                    color: @theme_100;
 
                     > a {
                         color: @theme_00;
@@ -86,7 +92,7 @@ html {
         }
 
         body {
-            background-color: @theme_90;
+            background: @theme_15;
         }
 
         header {
@@ -98,18 +104,18 @@ html {
                 }
 
                 > .row {
-                    background-color: @theme_main;
-                    border-top: 2px solid @theme_35;
+                    background-color: @theme_main_dark;
+                    border-top: 2px solid @theme_25;
                 }
             }
 
             #right-search-form {
                 > #right-search-btn {
-                    color: @theme_45;
+                    color: @theme_25;
                 }
 
                 > input[type=text] {
-                    border-color: @theme_45;
+                    border-color: @theme_25;
                 }
             }
         }

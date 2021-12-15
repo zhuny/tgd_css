@@ -304,20 +304,21 @@ video {
 html.darkmode {
     #article-content-wrapper {
         > .footer {
-            background-color: @theme_80;
+            background-color: @theme_15;
         }
 
         > .header {
-            background-color: @theme_80;
+            background-color: @theme_15;
         }
     }
 
     #article-list {
         #article-list-category {
-            background-color: @theme_80;
+            background-color: @theme_15;
+            border-top: none;
 
             > a {
-                background-color: @theme_80;
+                background-color: @theme_15;
             }
         }
 
@@ -326,6 +327,10 @@ html.darkmode {
                 > .list-header {
                     > span {
                         background-color: @theme_25;
+                    }
+
+                    >strong, >b {
+                        color: @theme_100;
                     }
                 }
             }
@@ -384,7 +389,7 @@ html.darkmode {
     }
 
     #board-info {
-        background-color: @theme_65;
+        background-color: @theme_20;
 
         #board-info-bottom {
             #addFavoriteBtn {
@@ -458,8 +463,13 @@ html.darkmode {
         }
     }
 
+    .input-group-btn {
+        i.fa-search {
+            color: @theme_95;
+        }
+    }
+
     header {
-        background: @theme_main;
+        background: @theme_main_dark;
     }
 }
-
