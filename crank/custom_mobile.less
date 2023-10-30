@@ -104,8 +104,8 @@
             background-image: url("@{base_url}/cranktv_alpha.png");
             background-position: 0 center;
             background-size: cover;
-            color: transparent;
-            padding: 4px 24px;
+            color: transparent!important;
+            padding: 4px 32px;
             float: none !important;
             user-select: none;
 
@@ -171,6 +171,14 @@ nav#nav {
             color: @theme_00;
         }
     }
+
+    > .nav-menu-area {
+        .nav-menu {
+            &:hover {
+                color: @theme_10;
+            }
+        }
+    }
 }
 
 html.darkmode.mb {
@@ -221,7 +229,7 @@ html.darkmode.mb {
     #board-info {
         >h1 {
             >a {
-                color: transparent;
+                color: transparent!important;
             }
         }
     }
@@ -270,6 +278,14 @@ html.darkmode.mb {
 
             a {
                 color: @theme_100;
+            }
+        }
+
+        > .nav-menu-area {
+            .nav-menu {
+                &:hover {
+                    color: @theme_90;
+                }
             }
         }
     }

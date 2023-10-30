@@ -40,17 +40,23 @@ html {
                     }
                 }
 
+                &.hot {
+                    background-color: @theme_20;
+                }
+
+                &.notice {
+                    background-color: @theme_30;
+                }
+
                 &:hover {
                     background: @theme_10!important;
                 }
             }
 
-            > .article-list-row.hot {
-                background-color: @theme_20;
-            }
-
-            > .article-list-row.notice {
-                background-color: @theme_30;
+            #article-list-category {
+                > a {
+                    background-color: @theme_20!important;
+                }
             }
         }
 
@@ -86,6 +92,10 @@ html {
 
                     > i.fa.fa-square {
                         color: @theme_50;
+                    }
+
+                    &:hover {
+                        background: @theme_10!important;
                     }
                 }
             }
@@ -209,6 +219,7 @@ html {
 #board-info {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    padding-bottom: 60px;
     position: relative;
 
     #board-info-profile-img {
@@ -240,7 +251,7 @@ html {
             background-size: cover;
             color: transparent;
             user-select: none;
-            padding-right: 16px;
+            padding-right: 48px;
         }
     }
 }
@@ -349,5 +360,11 @@ header {
                 }
             }
         }
+    }
+}
+
+#main-menu {
+    #article-category-left-list {
+        font-family: "FontAwesome", "starcraft", "FontAwesome5-solid";
     }
 }
